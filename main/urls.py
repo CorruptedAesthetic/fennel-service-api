@@ -19,6 +19,7 @@ from main import (
 app_name = "main"
 
 urlpatterns = [
+    path("", views.api_root),  # Root API endpoint
     path("get_version/", views.get_version),
     path("healthcheck/", views.healthcheck),
     path("livecheck/", views.livecheck),
